@@ -1,13 +1,7 @@
-def input():
-    l = list()
-    n = int(input('Количество входных списков: '))
-    while n > 0:
-        l.append(input('Элементы списка через пробел: ').split(' '))
-        n -=1
-    return l
+import test
 
-def repeat():
-    lists = input()
+
+def repeat(lists):
     i = 0
     index = 0
     min = len(lists)
@@ -16,7 +10,7 @@ def repeat():
             min = len(list)
             index = i
         i += 1
-    rep = list()
+    rep = list
     run = True
     j = 0
     i = 0
@@ -35,3 +29,6 @@ def repeat():
         print('Количество одинаковых элементов: ', len(rep))
     else:
         print('Одинаковых элементов нет')
+
+
+repeat(test.my_input())
